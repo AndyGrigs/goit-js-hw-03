@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 3</title>
-</head>
-<body>
-    <h1>My homework 3 📝</h1>
-    <p>Open console to see the results 🎯 </p>
-    <h3>Have a nice day! 💖 </h3>
-    <script src="./js/task-1.js"></script>
+  <head>
+    <style>
+        form{
+            width: 300px;
+            margin: 2em auto;
+        }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+      }
+
+      .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #000;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My homework 3 and my practise 📝</h1>
+    <p>Open console to see the results 🎯</p>
+    <h3>Have a nice day! 💖</h3>
+    <a href="./todo.html">Go to "TO DO"</a>
+
+    <form id="mainForm">
+      <input type="number" placeholder="amount" name="amount" />
+      <button type="submit">Generate</button>
+    </form>
+
+    <div class="container js-container"></div>
+
+    <!-- <script src="./js/task-1.js"></script>
     <script src="./js/task-2.js"></script>
-    <script src="./js/task-3.js"></script>
-</body>
+    <script src="./js/task-3.js"></script> -->
+    <script src="./js/practice.js"></script>
+  </body>
 </html>
