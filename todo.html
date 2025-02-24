@@ -68,6 +68,9 @@
             align-items: center;
             border: 1px solid #ddd;
         }
+        .line {
+            text-decoration: line-through;
+        }
 
         .delete-btn {
             background: #dc3545;
@@ -87,19 +90,15 @@
 
     <div class="container">
         <h2>To-Do Liste</h2>
-        <div class="task-input">
-            <input type="text" id="taskInput" placeholder="Neue Aufgabe...">
+        <form class="task-input" id="form">
+            <input type="text" id="taskInput" name="task" placeholder="Neue Aufgabe...">
             <button id="addTaskBtn">Hinzufügen</button>
-        </div>
+        </form>
         <ul class="task-list" id="taskList">
-            <li>tiuy</li>
-            <li>tiuy</li>
-            <li>tiuy</li>
-            <li>tiuy</li>
         </ul>
     </div>
 
-    <script src="todo.js"></script>
+    <script src="./js/todo.js"></script>
 
 </body>
 </html>
